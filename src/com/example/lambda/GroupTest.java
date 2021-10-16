@@ -17,7 +17,7 @@ public class GroupTest {
         Map<String, List<SalesTxn>> tMap;
         
         // Print out transactions grouped by Buyer
-        System.out.println("=== Transactions Grouped by Buyer ===");
+        System.out.println("=== Transactions Grouped by Buyer Lamda ===");
         tMap = tList.stream()
             .collect(Collectors.groupingBy(SalesTxn::getBuyerName));
         
